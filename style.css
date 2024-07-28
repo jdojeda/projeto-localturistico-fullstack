@@ -1,0 +1,85 @@
+/* Selector universal */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* root » aplica cambios a todo el proyecto */
+:root {
+  /* define la fuente "Alice" por defecto para todo el proyecto */
+  font-family: "Alice", serif;
+  /* define por defecto en 150% el linhe-height */
+  line-height: 150%;
+  color: #573a37;
+}
+
+body {
+  background-image: url(assets/bg-image.jpg);
+  background-size: cover;
+}
+
+/* --------------- */
+/* title: container */
+/* --------------- */
+
+#title {
+  /* sin el "box-sizing" el width de #page va a 848px porque le suma del padding */
+  box-sizing: border-box;
+  width: 800px;
+  padding: 24px;
+  background-color: #f0e8c2;
+  border-radius: 8px; /*24px*/
+  /* alinea al centro */
+  margin: 24px auto;
+}
+
+img {
+  border-radius: 16px;
+}
+
+/* ---- */
+/* main */
+/* ---- */
+
+main {
+  padding: 24px;
+}
+
+/* margenes entre las secciones del main */
+section + section {
+  margin-top: 24px;
+}
+
+/* margenes entre la sección info */
+#about p + p {
+  margin-top: 12px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 140%;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1,
+h2 {
+  color: #291b1a;
+  margin-bottom: 4px;
+  line-height: 150%;
+}
+
+ul {
+  padding-left: 24px;
+}
+
+footer {
+  color: #f0e8c2;
+  text-align: center;
+}
+
+footer img {
+  vertical-align: middle;
+}
